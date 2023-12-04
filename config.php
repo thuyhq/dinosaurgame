@@ -2,8 +2,8 @@
 
     return array(
         'host_client' => 'https://localhost:1234/sco/',
-        'host_server' => 'https://dinosaurgame.io/',
-        'public_link' => 'https://dinosaurgame.io/',
+        'host_server' => 'https://dinosaur.findbusiness.me/',
+        'public_link' => 'https://dinosaur.findbusiness.me/',
         'public_room' => 'https://localhost:1234/sco/',
         'url_login' => 'https://localhost:1234/sco/login.php',
         'consumer_key' => 'DARIgGjPxzhybp2pGKhcJPKxw',

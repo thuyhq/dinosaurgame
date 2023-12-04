@@ -13,9 +13,9 @@ and open the template in the editor.
     <head>
         <title>Dinosaur Game Multiplayer by Rapperkey - Dinosaurgame.io</title>
         <meta charset="UTF-8">
-        <link rel="canonical" href="https://dinosaurgame.io/" />
+        <link rel="canonical" href="https://dinosaur.findbusiness.me/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" type="image/x-icon" href="https://dinosaurgame.io/favicon.png" />
+        <link rel="shortcut icon" type="image/x-icon" href="https://dinosaur.findbusiness.me/favicon.png" />
         <meta name="description" content="Dinosaur game is an interesting and addictive game. Control your run-automatically dinosaur, avoid all obstacles, and compete with many players. Play now!" />
         <meta http-equiv="X-UA-Compatible" content="requiresActiveX=true,IE=Edge,chrome=1" />
         <meta http-equiv="Content-Language" content="en-US" />
@@ -23,14 +23,14 @@ and open the template in the editor.
         <meta property="og:site_name" content="Dinosaurgame.io" />
         <meta property="og:title" content="Dinosaur Game Multiplayer by Rapperkey - Dinosaurgame.io" />
         <meta property="og:description" content="Dinosaur game is an interesting and addictive game. Control your run-automatically dinosaur, avoid all obstacles, and compete with many players. Play now!">
-        <meta property="og:url" content="https://dinosaurgame.io/">
-        <meta property="og:image" content="https://dinosaurgame.io/dinosaur-game-multiplayer.png" />
+        <meta property="og:url" content="https://dinosaur.findbusiness.me/">
+        <meta property="og:image" content="https://dinosaur.findbusiness.me/dinosaur-game-multiplayer.png" />
         <meta property="og:image:width" content="395" />
         <meta property="og:image:height" content="200" />
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:description" content="Dinosaur game is an interesting and addictive game. Control your run-automatically dinosaur, avoid all obstacles, and compete with many players. Play now!"/>
         <meta name="twitter:title" content="Dinosaur Game Multiplayer by Rapperkey - Dinosaurgame.io"/>
-        <meta name="twitter:image" content="https://dinosaurgame.io/dinosaur-game-multiplayer.png"/>
+        <meta name="twitter:image" content="https://dinosaur.findbusiness.me/dinosaur-game-multiplayer.png"/>
 
         <!-- jQuery library -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" ></script>  
@@ -46,7 +46,7 @@ and open the template in the editor.
         <link href="./css/bootstrap.css" rel="stylesheet" type="text/css" />
         <link href="./css/bootstrap-social.css" rel="stylesheet" type="text/css" />
 
-        <script async src="//api.adinplay.com/libs/aiptag/pub/FLP/dinosaurgame.io/tag.min.js"></script>
+<!--        <script async src="//api.adinplay.com/libs/aiptag/pub/FLP/dinosaurgame.io/tag.min.js"></script>-->
         <script>
             var aiptag = aiptag || {};
             aiptag.consented = true; //GDPR setting, please set this value to false if an EU user has declined or not yet accepted marketing cookies, for users outside the EU please use true
@@ -105,7 +105,7 @@ and open the template in the editor.
         </div>
         <!--http://45.33.124.160/Dino2/Run  -->
         <div id="iframe-game-on-page">
-            <iframe id="sco-game" src="https://dinosaurgame.io/Run/" width="900" height="600" frameborder="0" 
+            <iframe id="sco-game" src="https://dinosaur.findbusiness.me/Run/" width="900" height="600" frameborder="0" 
                     seamless="true" webkitallowfullscreen="true" mozallowfullscreen="true"
                     allowfullscreen="true" webkit-playsinline="true" scrolling="no">
             </iframe>
@@ -113,7 +113,6 @@ and open the template in the editor.
 		<?php
 			echo "<script src='./js/index.js?v=".$configs['version']."'></script>";
 		?>
-        <img style="display: none" src='https://whos.amung.us/widget/dinosaurio.png' width='0' height='0' border='0'/>
     </body>
 
 </html>
