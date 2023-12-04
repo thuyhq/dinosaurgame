@@ -1,0 +1,233 @@
+@import url('general.css?v=17');
+@import url('animation.css?v=10');
+@import url('button.css?v=10');
+@import url('input.css?v=10');
+@import url('skins.css?v=10');
+@import url('user.css?v=1.0');
+@import url('form.css?v=17');
+
+@font-face {
+    font-family: 'M41_LOVEBIT';
+    src: url('../fonts/M41_LOVEBIT.eot');
+    src: url('../fonts/M41_LOVEBIT.eot?#iefix') format("embedded-opentype"),
+        url('../fonts/M41_LOVEBIT.woff') format("woff"),
+        url('../fonts/M41_LOVEBIT.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sec-user, .sec-skin{
+    width: 100%;
+    display: block;
+    clear: both;
+}
+/******************************************
+ *** header logo
+ ******************************************/
+.header-logo {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.title-image {
+    width: 121px;
+    height: 36px;
+}
+
+.title-bird {
+    width: 28px;
+    height: 21px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+
+/******************************************
+ *** SOCIAL
+ ******************************************/
+.social {
+    display: block;
+    text-align: center;
+}
+
+.social li {
+    display: block;
+    margin-bottom: 10px;
+    height: 40px;
+}
+.social li.facebook{
+    background-color: #3b5998;
+}
+.social li.twitter{
+    background-color: #1da1f2;
+}
+.social li.google{
+    background-color: #dc4b3f;
+}
+.social li a{
+    display: block;
+}
+/******************************************
+ *** BOX ADV MOBILE 320X50
+ ******************************************/
+.adv{
+    background-color: #edfcdc;
+    border: 2px solid #552d00;
+    border-radius: 5px;
+    display: block;
+    margin: 5px auto;
+    overflow: hidden;
+}
+.s320x50{
+    width: 320px;
+    height: 50px;
+}
+
+/******************************************
+ *** social
+ ******************************************/
+@media (max-width: 480px) {
+    .sec-user, .sec-skin{
+        width: 100%;
+        display: block;
+        clear: both;
+    }
+}
+
+/* crop image */
+.cropit-preview {
+    background-color: #f8f8f8;
+    background-size: cover;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+.cropit-preview-image-container {
+    cursor: move;
+}
+
+.image-size-label {
+    margin-top: 10px;
+}
+
+input, .export {
+    display: block;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.modal-pop {
+    width: 444px;
+    height: 260px;
+    background-color: white;
+    padding-left: 10px;
+    margin: auto
+}
+
+.avatar-button {
+    width: 200px;
+    margin-top: 10px
+}
+
+.avatar-close {
+    margin-left: 419px
+}
+
+.avatar-error {
+    color: red;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20px
+}
+
+@media (max-width: 450px) {
+    .modal-pop {
+        width: 220px;
+        height: 330px;
+        background-color: white;
+        padding-left: 10px;
+        margin: auto
+    }
+
+    .cropit-preview {
+        background-color: #f8f8f8;
+        background-size: cover;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-top: 5px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .avatar-button {
+        width: 200px;
+        margin-top: 10px;
+        margin-left: -18px;
+        height: 25px;
+    }
+
+    .avatar-close {
+        margin-left: 195px
+    }
+
+    .avatar-error {
+        color: red;
+        font-size: 15px;
+        text-align: left;
+        margin-left: 0px;
+    }
+}
+/* SHARE SOCIAL CHOOSE SKIN */
+#share-block{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(85, 45, 0, 0.85);
+}
+#share-block .share-btns{
+    margin: 2% auto;
+}
+#share-block .share-btns a{
+    display: inline-block;
+    margin: 7px 1%;
+    overflow: hidden;
+    width: 29%;
+}
+#share-block .share-btns a img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.share-text{
+    font-size: 2.5vmin;
+}
+li.bird-avt .inner-image {
+    position: absolute;
+    z-index: 9;
+    left: 38%;
+}
+li.bird-avt .be-image{
+    width: 21px !important;
+    height: 24px !important;
+    position: absolute;
+    top: 10px;
+    left: 47%;
+    transition: inherit;
+    overflow: hidden;
+    border-radius: 20px;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "dinosocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "phuong",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "node-random-name": "^1.0.1",
+    "socket.io": "^2.1.1",
+    "uuid": "^3.3.2",
+    "websocket": "^1.0.28",
+    "ws": "^6.1.0"
+  }
+}

@@ -1,0 +1,794 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: #69C6CE;
+    background-image: url('./img/background.jpg');
+    background-size: auto;
+    background:url("./img/cloud01.png") left repeat-y,
+                url("./img/cloud02.png") right repeat-y,
+                url('./img/background.jpg');
+}
+
+
+div, input {
+    font-family: M41_LOVEBIT;
+}
+
+ul li {
+    list-style: none;
+}
+
+.footer, .footer-endgame {
+    /* bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5vmin; */
+}
+
+/* .footer a:-webkit-any-link,
+.footer-endgame a:-webkit-any-link {
+    color: #ef6100;
+    cursor: auto;
+    text-decoration: none;
+}
+
+.footer-endgame {
+    display: none;
+    font-size: 1.5vmin;
+} */
+
+.animated {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0%, 50%, 100% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(-5px);
+    }
+    20% {
+        transform: translateY(-10px);
+    }
+    30% {
+        transform: translateY(-8px);
+    }
+    40% {
+        transform: translateY(-5px);
+    }
+    60% {
+        transform: translateY(5px);
+    }
+    70% {
+        transform: translateY(10px);
+    }
+    80% {
+        transform: translateY(8px);
+    }
+    90% {
+        transform: translateY(5px);
+    }
+}
+
+.bounce {
+    animation-name: bounce;
+}
+
+.input {
+    width: 240px;
+    height: 55px;
+    border: 3px solid #552d00;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    background: #edfcdc;
+    color: #572d00;
+}
+
+.input-link {
+    width: 214px;
+    height: 40px;
+    border: 3px solid #552d00;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    background: #dfa84c;
+    color: #572d00;
+    cursor: text;
+}
+
+.btn {
+    width: 240px;
+    height: 40px;
+    border: 3px solid #552d00;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    background: #dfa84c;
+    color: #572d00;
+}
+
+.panel {
+    width: 300px;
+    height: 250px;
+    border: 3px solid #552d00;
+    border-radius: 5px;
+    background: #edfcdc;
+    text-align: center;
+}
+
+.btn:visited, .btn:active {
+    background: #88662f;
+}
+
+.screens .screen .title img{
+    height: 60px;
+}
+
+.text-respawn {
+    margin: 0 auto;
+    width: 220px;
+    padding-top: 8px;
+}
+
+.desktop .input {
+    width: 310px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.desktop .btn {
+    width: 310px;
+}
+
+#menuscreen {
+    display: block;
+}
+
+#menuscreen .skin-bg {
+    background: rgba(85, 45, 0, 0.85);
+}
+
+#menuscreen .share-block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(85, 45, 0, 0.85);
+    top: 0;
+}
+
+#menuscreen .share-block .share-btns {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#menuscreen .share-block .share-text {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+    line-height: 15px;
+    margin-top: 6PX;
+}
+
+#menuscreen .prev-btn {
+    position: absolute;
+    top: 20px;
+    left: 8px;
+    cursor: pointer;
+}
+
+#menuscreen .next-btn {
+    position: absolute;
+    top: 20px;
+    right: 8px;
+    cursor: pointer;
+}
+
+#menuscreen .skin-containter {
+    width: 900px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#menuscreen .skin-item {
+    width: 300px;
+    float: left;
+}
+
+#menuscreen .skin-item img {
+    width: 80px;
+    height: 70px;
+    margin: 0 auto;
+    display: block;
+}
+
+#menuscreen .back-btn {
+    margin-top: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#menuscreen .close-btn {
+    display: none;
+}
+
+#menuscreen .menu {
+    display: flex;
+    width: 100%;
+}
+
+#menuscreen .menu .menu-item {
+    flex: 1;
+    display: flex;
+}
+
+#menuscreen .menu .menu-left {
+    justify-content: flex-end;
+}
+
+#menuscreen .menu .menu-right {
+    justify-content: flex-start;
+}
+
+#menuscreen .menu .main-item {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#menuscreen .menu .main-item .menu-control {
+    width: 240px;
+    margin: 0 auto;
+}
+
+#menuscreen .menu .main-item .menu-control a{
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+#menuscreen .menu .main-item .menu-control.custom-skin {
+    position: relative;
+    width: 304px;
+    height: 68px;
+    border: 3px solid #552d00;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#menuscreen .menu .main-item .qc-mobile {
+    display: none;
+}
+
+#menuscreen .play-game {
+    padding: 20px 0px;
+    cursor: pointer;
+    height: 67px;
+    color:greenyellow;
+    font-size: 20px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+#menuscreen .player-name {
+    margin-top: 5px;
+}
+
+#menuscreen .play-friend {
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#menuscreen .party-text {
+    text-align: center;
+    margin-bottom: 10px;
+    text-indent: 15px;
+    color: #fff;
+    line-height: 15px;
+}
+
+#menuscreen .title {
+    /* width: 365px;
+    margin: 20px auto; */
+    padding: 10px 10px;
+}
+
+#menuscreen .title > div {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.menu-bottom-items {
+    display: block;
+    margin-top: 40px;
+}
+
+.menu-bottom-items ul {
+    padding: 0;
+}
+
+.menu-bottom-items ul li {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu-bottom-items .list-bird {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu-bottom-items .notice {
+    text-align: center;
+    font-size: 10px;
+    width: 600px;
+    margin: 0 auto;
+    background-color: #CCC;
+    border: 1px solid;
+    border-radius: 10px;
+    line-height: 20px;
+    padding: 5px;
+}
+
+.desktop #menuscreen .menu .main-item .menu-control {
+    width: 310px;
+    box-sizing: border-box;
+}
+
+.desktop #menuscreen .player-name {
+    margin-top: 0;
+    width: 304px;
+    border-radius: 3px
+}
+
+.desktop #menuscreen .play-game {
+    margin: 15px auto 5px auto;
+    border-radius: 5px
+}
+
+.desktop #menuscreen .menu .main-item .menu-control {
+    margin-right: 0;
+}
+
+.desktop #menuscreen .menu .menu-right {
+    display: block;
+}
+
+.desktop #menuscreen .app-download {
+    margin-top: 7px;
+}
+
+.desktop #menuscreen .party-group {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.85);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.desktop #menuscreen .party-group .close-btn {
+    position: absolute;
+    right: 33px;
+    display: block;
+    top: 20px;
+}
+
+#menuscreen .party-group {
+    display: none;
+}
+
+
+.desktop #menuscreen .party-link {
+    width: 300px;
+    font-size: 15px;
+}
+
+.desktop #menuscreen .party-text {
+    width: 500px;
+    text-indent: 18px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+#playscreen .panel {
+    margin: 0 35px;
+}
+
+#playscreen .death-dlg {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+    flex-direction: column;
+}
+
+#playscreen .death-dlg .panel-content {
+    width: 240px;
+    margin: 0 auto;
+}
+
+#playscreen .death-dlg .score-container {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#playscreen .death-dlg .bird {
+    width: 79px;
+    height: 58px;
+    margin: 20px auto 25px auto;
+}
+
+#playscreen .death-dlg .fb {
+    cursor: pointer;
+    float: left;
+}
+
+#playscreen .death-dlg .tw {
+    cursor: pointer;
+    float: right;
+}
+
+#playscreen .death-dlg .continue {
+    width: 240px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+#playscreen .qc-text {
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    line-height: 15px;
+    margin: 10px auto 10px auto;
+}
+
+#playscreen .death-ads {
+    margin-top: 0;
+}
+
+#playscreen .death-ads-mobile {
+    display: none;
+}
+
+.mobile .screen {
+    margin: 0;
+}
+
+/***********************************/
+.text-center {
+    text-align: center;
+}
+
+.menu-control a {
+    text-decoration: none;
+}
+
+.menu-control.text-link {
+    padding: 20px 0;
+}
+.menu-control.text-link a{
+    cursor: pointer;
+}
+
+.btn-link {
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.btn-link.btn-rmb{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.btn-link.btn-fgp{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.input-h46 {
+    height: 46px;
+}
+
+.input-h36 {
+    height: 36px;
+}
+
+.input.input-regsiter {
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.btn-300x54 {
+    width: 300px;
+    height: 54px;
+    border: none;
+}
+
+#menuscreen .menu .menu-item.sub-text {
+    display: block;
+    text-align: center;
+    color: #edfcdc;
+    line-height: 2;
+}
+
+.menu-login {
+    margin: 20px 0 10px;
+}
+
+.menu-login span, .menu-login a {
+    color: #edfcdc;
+}
+
+.menu-login input[type='checkbox'] {
+    margin-top: 3px;
+    margin-left: 1px;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.btn.send-email {
+    margin-top: 20px;
+    width: auto;
+}
+
+.avatar-user {
+    width: 80px;
+}
+
+.avatar-user, .info-user {
+    height: 68px;
+    overflow: hidden;
+}
+
+.avatar-user img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.info-user {
+    color: #edfcdc;
+    margin-left: 10px;
+}
+
+.info-user div {
+    margin-top: 5px;
+    height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 30px;
+    width: 200px;
+}
+
+.w150 {
+    width: 150px;
+    text-align: center;
+}
+
+.w150 .btn {
+    width: 100%;
+    margin: 10px 0 20px;
+}
+
+.desktop #menuscreen .w150 .party-text.back-btn {
+    white-space: nowrap;
+    color: #edfcdc;
+}
+
+.title-profile {
+    text-align: center;
+    color: #edfcdc;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.input-label {
+    color: #ef6100;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.or {
+    position: absolute;
+    top: 90px;
+    left: 317px;
+    font-size: 10px;
+}
+
+.alert {
+    display: block;
+    padding: 10px;
+    margin: 10px 0 10px 20px;
+    border: 2px solid #552d00;
+    position: relative;
+}
+
+.alert-error {
+    background-color: #ef6100;
+    color: #FFEB3B;
+}
+
+.alert-success {
+    background-color: #edfcdc;
+    color: #00BCD4;
+}
+
+/********************* LEADER BOARD ******************/
+.leader {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    color: #edfcdc;
+}
+
+table.leader-board {
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #552d00;
+    color: #edfcdc;
+}
+
+table.leader-board thead {
+    background-color: #552d00;
+}
+
+table.leader-board thead tr th {
+    padding: 20px 10px;
+}
+
+table.leader-board tbody {
+    background-color: gray;
+}
+
+table.leader-board tbody tr td {
+    padding: 5px 10px;
+}
+
+table.leader-board tbody tr td img {
+    vertical-align: middle;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+
+table.leader-board tbody tr:nth-child(2n) {
+    background-color: #5c6248;
+}
+/********************* PAGINATOR ******************/
+.list-page{
+    display: block;
+    padding: 10px;
+}
+.list-page li{
+    display: inline-block;
+}
+.list-page li a, .list-page li span{
+    border: 1px solid #552d00;
+    background-color: #edfcdc;
+    color: #552d00;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.list-page li a:hover,
+.list-page li.active span{
+    cursor: pointer;
+    border: 1px solid #552d00;
+    background-color: #552d00;
+    color: #edfcdc;
+}
+/********************* crop image ******************/
+
+.cropit-preview {
+    background-color: #f8f8f8;
+    background-size: cover;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 5px;
+    width: 250px;
+    height: 250px;
+}
+
+.cropit-preview-image-container {
+    cursor: move;
+}
+
+.image-size-label {
+    margin-top: 10px;
+}
+
+input, .export {
+    display: block;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+div.bird-avt .inner-image {
+    position: absolute;
+    z-index: 9;
+    left: 38%;
+}
+div.bird-avt .be-image{
+    width: 36px !important;
+    height: 40px !important;
+    position: absolute;
+    top: 15px;
+    left: 49%;
+    transition: inherit;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.Author{
+    background-color: rgba(85,45,0,0.85);
+    padding: 5px 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.Author a{
+    text-decoration:  none
+}
+.MoreGames{
+    color:  #FFF;
+    background-color: rgba(237,96,26,0.8);
+    padding: 7px 10px 5px 10px;
+    border-radius: 3px;
+    float: right;
+    margin: 8px 0 0 0;
+}
+.MoreGames:hover{
+    background-color: rgba(237,96,26,1)
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right{
+    float: right;;
+}
+
+.float-none{
+    float:none;
+}
